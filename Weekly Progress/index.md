@@ -1,5 +1,0 @@
-# Weekly Progress
-
----
-
-
