@@ -15,7 +15,6 @@ The project idea is to Improve the maintainability of the Bela Image development
 1. [Introduction](#intro)
 2. [Implementation Details](#implementation)
 	- [Background](#background)
-	- [Code Overview](#code)
 3. [Benefit](#benefit)
 4. [References](#ref)
 
@@ -29,16 +28,17 @@ In order to add the Bela Image builder features to BeagleBoard Image builder. Fi
 
 Here are typical changes need to do in BeagleBoard Image builder repo
 
-    - Bela-specific changes will be made conditional in RootStock-NG.sh script in BeagleBoard Image builder repo
-        - Add Bela Image builder scripts features in RootStock-NG.sh script
+   - Bela-specific changes will be made conditional in RootStock-NG.sh script in BeagleBoard Image builder repo
+       - Add Bela Image builder scripts features in RootStock-NG.sh script
             - bootloader, kernel, xenomai, downloads, emmc-flasher-chroot and pre-chroot
-    - Use config template and create bela-image.conf file and also add bela required packages list to it
-    - Make necessary changes in build scripts to Optimise boot times as Bela Image has fast boot time campared to BeagleBoard Image
-    - After building Bela Image using Beagleboard Image builder functionalities make changes to the Image-builder repo
+   - Use config template and create bela-image.conf file and also add bela required packages list to it
+   - Make necessary changes in build scripts to Optimise boot times as Bela Image has fast boot time campared to BeagleBoard Image
+   - After building Bela Image using Beagleboard Image builder functionalities make changes to the Image-builder repo
+    
 ### Background <a name="background"></a>
 Bela Image development repo is heavily based and which was initially inspired by Beagleboard Image-builder scripts. Currently, the Beagle board Image development repo diverged greatly from a common functionalities of building Images.
 
-Now, there is a requirement to "rebase" the functionalities of the Bela Image builder repo to the Beagleboard Image builder one. As the two codebases are drastically different we need to understand and “semantic rebase” the features of the Bela Image builder repo (xenomai kernel building scripts along with a bunch of other stuff) to Beagleboard Image builder repo. After these changes the Bela Image development will follow more closely with the Beagleboard Image development and as a result Bela Image will be updated more often and it minimizes future development effort. 
+There is a requirement to "rebase" the functionalities of the Bela Image builder repo to the Beagleboard Image builder one. As the two codebases are drastically different we need to understand and “semantic rebase” the features of the Bela Image builder repo (xenomai kernel building scripts along with a bunch of other stuff) to Beagleboard Image builder repo. After these changes the Bela Image development will follow more closely with the Beagleboard Image development and as a result Bela Image will be updated more often and it minimizes future development effort. 
 
 ## Benefit <a name="benefit"></a>
 This project adds support for the Bela Image development to make Bela Image follow more closely with BeagleBoard Images. I mean after Bela specific changes made conditional to the Image-builder repository. The Bela Image development will be updated more often, more easily in parallel with BeagleBoard Images. 
