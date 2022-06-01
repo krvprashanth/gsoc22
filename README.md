@@ -7,7 +7,7 @@ The project idea is to Improve the maintainability of the Bela Image development
 ## About
 - _Student Name:_ [Kurva Prashanth](https://krvprashanth.in)
 - _Mentors:_ Giulio Moro, Vedant Paranjape, Vaishnav Achath
-- _GSoC Entry link:_ [GSoC entry #5697403266531328](https://summerofcode.withgoogle.com/programs/2022/projects/ykkMkxcR)
+- _GSoC Entry link:_ [GSoC entry](https://summerofcode.withgoogle.com/programs/2022/projects/ykkMkxcR)
 - _Wiki:_ [BB.org forum building-bela-images](https://forum.beagleboard.org/t/building-bela-images/32104)
 - _Blog Link:_ [Building Bela Images](https://krvprashanth.in/gsoc2022/) <br>
 
